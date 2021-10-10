@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleS.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>GITHUB Repository Creation</title>
+  </head>
+  <body>
+    <header class="container-fluid p-0 m-0">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div>
+          <img src="./Images/git.png" class="logo"/>
+        </div>
+        <button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="nav_list">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#cn">New Repository</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#copy">HTTP Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#clone">Clone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#cf">Create Files</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#status">Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#af">Add Files</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#commit">Commit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#origin">Origin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#push">Push</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="section-4">
+      <div class="block text-center m-5" id="cn">
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Create a New Repository</h2>
+          <ol>1. Enter a unique repository name</ol>
+          <ol>2. Enter some description about repository (optional)</ol>
+          <ol>3. Make repository public / private</ol>
+          <ol>4. Add Readme.md or other files (optional)</ol>
+          <ol>5. Click on create repository</ol>
+        </div>
+        <div class="float-right col-md-8 col-12">
+          <img src="./Images/create.PNG" class="img1"/>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="copy">
+        <div class="col-md-8 col-12">
+          <img src="./Images/copy.PNG" class="img2"/>
+        </div>
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Get HTTP Link</h2>
+          <ol>1. After creating repository you will redirect another page</ol>
+          <ol>2. Click HTTPS option</ol>
+          <ol>3. Copy generated link</ol>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="clone">
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Clone to Local Repository</h2>
+          <ol>1. Now open terminal</ol>
+          <ol>2. And clone the repository into local repository</ol>
+          <ol>3. Type <b>git clone [HTTPS link that you copied from website]</b> & press enter</ol>
+        </div>
+        <div class="col-md-8 col-12">
+          <img src="./Images/clone.PNG" class="img2"/>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="cf">
+        <div class="col-md-8 col-12 d-flex">
+          <img src="./Images/html.PNG" class="img3 mr-2"/>
+          <img src="./Images/css.PNG" class="img3"/>
+        </div>
+        <div class="col-md-4 col-12 text-left ml-4">
+          <h2 class="fs">Create Required Files</h2>
+          <ol>1. Open VS Code editor in the same folder</ol>
+          <ol>2. Create the required files (e.g. .html/.css)</ol>
+          <ol>3. Save the file's in same repository</ol>
+        </div>
+      </div>
+      
+      <div class="block text-center m-5" id="status">
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Check Git Status</h2>
+          <ol>1. Check status of local repository</ol>
+          <ol>2. Type <b>git status</b></ol>
+          <ol>3. File names in red, shows that files are not added to git yet</ol>
+        </div>
+        <div class="col-md-8 col-12">
+          <img src="./Images/status.PNG" class="img2"/>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="af">
+        <div class="col-md-7 col-12">
+          <img src="./Images/addfiles.PNG" class="img2"/>
+        </div>
+        <div class="col-md-5 col-12 text-left">
+          <h2 class="fs">Adding Files to Local Repository</h2>
+          <ol>1. To add unadded files to local repository use <b>git add</b></ol>
+          <ol>2. We can add files in two ways
+            <ol><b>.</b>&nbsp Add some specific file by <b>git add 'file name'</b></ol>
+            <ol><b>.</b>&nbsp Add all files by <b>git add</b></ol>
+          </ol>
+          <ol>3. Now if we write <b>git status</b>, we can see all red files turned into green, it means we successfully added these files into Local Repository</ol>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="commit">
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Commit Files Locally</h2>
+          <ol>1. Use <b>git commit</b> to commit files locally</ol>
+          <ol>2. Type <b>git commit -m "message"</b>, we can write any message that we want
+            <ol><b>.</b>&nbsp Message should describe the working of the commit</ol>
+          </ol>
+        </div>
+        <div class="col-md-8 col-12">
+          <img src="./Images/commit.PNG" class="img2"/>
+        </div>
+      </div>
+
+      <div class="block text-center m-5" id="origin">
+        <div class="col-md-8 col-12">
+          <img src="./Images/checkorigin.PNG" class="img2"/>
+        </div>
+        <div class="col-md-4 col-12 text-left">
+          <h2 class="fs">Check Origin</h2>
+          <ol>1. To check origin use <b>git remote -v</b></ol>
+          <ol>2. If the Origin isn't added, then add origin by <b>git remote add origin [HTTPS link]</b>
+            <ol><b>.</b>&nbsp HTTPS link should be same that we use to Clone Git Repository</ol>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="block text-center m-5" id="push">
+        <div class="col-md-5 col-12 text-left">
+          <h2 class="fs">Push Code to Remote Repository</h2>
+          <ol>1. To push the code to remote repository use <b>git push origin [branch name]</b></ol>
+          <ol>2. After <b>git push origin [branch name]</b> terminal will get your <b>github username</b> and <b>password</b></ol>
+          <ol>3. After push, Code will be published on your Github Repository</ol>
+        </div>
+        <div class="col-md-7 col-12">
+          <img src="./Images/push.PNG" class="img2"/>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="container-fluid d-inline-block">
+        <div class="row">
+          <div class="col-md-6 col-12 text-center">
+            <img src="./Images/git.png" class="logo m-0"/>
+          </div>
+          <div class="col-md-6 col-12 text-left mt-3">
+            <h4 class="text-light font-weight-light">Need Help?</h4>
+            <p class="text-muted">__________________</p>
+            <div class="text-light">
+              <i class="fas fa-phone-alt">&nbsp <a class="ph" href="tel:0300-1234567">0300-1234567</a> (Call or Text)</i><br>
+              <i class="far fa-calendar-alt">&nbsp M-F 9:30 AM - 6 PM (PST)</i><br>
+              <i class="far fa-envelope">&nbsp <a class="ph" href="mailto:arsujee444@google.com">arsujee444@google.com</a></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

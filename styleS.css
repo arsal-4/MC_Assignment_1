@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body{
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+img.logo{
+    width: 150px;
+    background-color: black;
+    margin-left: 50px;
+}
+
+.navbar{
+    background-color: black;
+    color:white;
+}
+
+.navbar-nav:hover{
+    color: white;
+}
+
+#nav-btn{
+    outline: none;
+    background-color: white;
+    border: 2px solid white;
+}
+#nav_list{
+    margin-left: 33%;
+    font-size: 1.1rem;
+}
+
+.img1{
+    width: 75%;
+}
+
+.img2{
+    width: 100%;
+}
+
+.img3{
+    width: 50%;
+}
+
+.section-4{
+    width:100%;
+    display: inline-block;
+}
+
+.block{
+    display: flex;
+}
+
+.p1{
+    visibility: hidden;
+}
+
+footer {
+    background: black;
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+.s{
+    color: rgb(255 0 0 / 35%);
+}
+
+.ful{
+    list-style-type: none;
+}
+
+.ph{
+    color:white;
+    cursor: pointer;
+}
+
+.ph:hover{
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .img1 .img2{
+        width:100%;
+    }
+
+    img.logo{
+        width: 100px;
+        margin: 0px;
+    }
+
+    .fs{
+        font-size: 18px;
+    }
+
+    ol{
+        font-size: 14px;
+    }
+
+    .block{
+        flex-direction: column;
+    }
+}
